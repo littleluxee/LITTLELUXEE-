@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LITTLELUXEE - Kids Boutique</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f7fa;
+            color: #24243e;
+        }
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(36,36,62,0.05);
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 18px;
+            text-decoration: none;
+            color: #24243e;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #e07f87;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 60px;
+            background: #fff;
+            padding: 32px 28px;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(36,36,62,0.04);
+        }
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #e07f87;
+        }
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+        }
+        .service-item {
+            flex: 1 1 220px;
+            background: #f9f3f4;
+            padding: 18px 13px;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(224,127,135,0.18);
+            text-align: center;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 11px;
+            margin: 8px 0 16px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        form button {
+            background: #e07f87;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        form button:hover {
+            background: #24243e;
+        }
+        footer {
+            text-align: center;
+            color: #8787a0;
+            padding: 16px 0;
+            background: #fff;
+            border-top: 1px solid #ededf4;
+            font-size: 0.95rem;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            .services-list {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LITTLELUXEE</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="home">
+            <div class="section-title">Welcome to LITTLELUXEE</div>
+            <p>
+                Discover a curated selection of <b>stylish kids wear</b>, unique <b>accessories</b>, handmade <b>craft items</b>, and delightful <b>toys</b> crafted with love and care. We bring joy to little ones with quality and creativity!
+            </p>
+        </section>
+        <section id="about">
+            <div class="section-title">About Us</div>
+            <p>
+                LITTLELUXEE is a modern destination for parents and families seeking the best in <b>children's fashion, playful accessories, artisanal crafts, and imaginative toys</b>. Our collection is thoughtfully selected to inspire smiles and nurture creativity in every child.
+            </p>
+        </section>
+        <section id="services">
+            <div class="section-title">Our Services</div>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Kids Wear</h3>
+                    <p>Trendy clothing in comfortable, premium fabrics for all ages.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Accessories</h3>
+                    <p>Adorable hats, hairbands, bags, and more to style every outfit.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Handicraft Items</h3>
+                    <p>Discover unique, handcrafted decor and gifts made by local artisans.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Kids Toys</h3>
+                    <p>Quality toys that spark imagination, learning, and fun playtime.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="section-title">Contact Us</div>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 LITTLELUXEE. All rights reserved.
+    </footer>
+</body>
+</html>
